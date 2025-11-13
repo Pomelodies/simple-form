@@ -8,7 +8,6 @@ function App() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [reset, setReset] = useState(false);
-  const [editInfo, setEditInfo] = useState(false);
 
   return (
     <>
@@ -25,7 +24,7 @@ function App() {
             </div>
             <button
               onClick={() => {
-                setEditInfo(true);
+                setReset(false);
               }}
             >
               Edit your information
