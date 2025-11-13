@@ -20,9 +20,10 @@ function App() {
             <h1>Results</h1>
           </header>
           <StepTwo
-            eventName="name"
-            eventEmail="email"
-            eventPassword="password"
+            eventName={name}
+            eventEmail={email}
+            eventPassword={password}
+            stateReset={setReset}
           />
           <Footer />
         </>
@@ -33,15 +34,15 @@ function App() {
           </header>
           <Form
             eventName={name}
-            stateName="setName"
+            stateName={setName}
             eventEmail={email}
-            stateEmail="setEmail"
+            stateEmail={setEmail}
             eventPassword={password}
-            statePassword="setPassword"
+            statePassword={setPassword}
             eventConfirmPassword={confirmPassword}
-            stateConfirmPassword="setConfirmPassword"
+            stateConfirmPassword={setConfirmPassword}
             eventReset={reset}
-            stateReset="setReset"
+            stateReset={setReset}
           />
           <Footer />
         </>

@@ -3,13 +3,13 @@ const StepTwo = (props) => {
   return (
     <main className="resultPage">
       <div className="infoResultPage">
-        <p>Name : {name}</p>
-        <p>Email : {email}</p>
-        <p>Password : {password} </p>
+        <p>Name : {props.eventName}</p>
+        <p>Email : {props.eventEmail}</p>
+        <p>Password : {props.eventPassword} </p>
       </div>
       <button
         onClick={() => {
-          setReset(false);
+          props.stateReset(false);
         }}
       >
         Edit your information
